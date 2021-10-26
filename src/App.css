@@ -1,38 +1,67 @@
-.App {
-  text-align: center;
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;800&display=swap");
+
+:root {
+  --color-primary: #585c6b;
+  --color-secondary: #eaeaea;
+  --color-accent: #51e3a4;
+  --color-accent-secondary: #87f2c4;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+body {
+  margin: 0;
+  font-size: 1rem;
+  font-family: "Open Sans", sans-serif;
+  font-weight: 600;
+  color: var(--color-primary);
+  background: #f0efe9;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+#root {
+  height: 100vh;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
 }
 
-.App-link {
-  color: #61dafb;
+.main {
+  background: #fff;
+  width: 80%;
+  max-width: 500px;
+  margin: 0 auto;
+  padding: 1em;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.TodoItem {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.todo-list {
+  width: 90%;
+  margin: 0 auto;
+}
+
+input[type="checkbox"] {
+  display: none;
+}
+
+.fa-circle {
+  font-size: 1.5rem;
+  color: var(--color-secondary);
+  transition: all 0.25s ease-in-out;
+}
+
+.fa-circle:hover {
+  color: var(--color-accent);
+}
+
+.fa-check-circle {
+  font-size: 1.5rem;
+  color: var(--color-accent);
+}
+
+.fa-check-circle:hover {
+  color: var(--color-accent-secondary);
 }
