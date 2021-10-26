@@ -21,6 +21,8 @@ This is a work in progress. Eventually, users should be able to:
 - check to make todos completed
 - uncheck completed todos
 
+Unexpected, I know.
+
 ## My process
 
 ### Built with
