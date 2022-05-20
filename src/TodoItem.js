@@ -2,18 +2,18 @@ import React from "react";
 
 function TodoItem(props) {
   return (
-    <div className="TodoItem">
+    <div className='TodoItem'>
       <p>{props.todo.text}</p>
-      <label for="checkbox-input">
+      <label htmlFor='checkbox-input'>
         {props.todo.completed ? (
-          <i class="fas fa-check-circle"></i>
+          <i className='fas fa-check-circle'></i>
         ) : (
-          <i class="far fa-circle"></i>
+          <i className='far fa-circle'></i>
         )}
       </label>
       <input
-        type="checkbox"
-        id="checkbox-input"
+        type='checkbox'
+        id='checkbox-input'
         checked={props.todo.completed}
       />
     </div>

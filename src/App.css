@@ -30,6 +30,8 @@ body {
   max-width: 500px;
   margin: 0 auto;
   padding: 1em;
+  padding-bottom: 4em;
+  position: relative;
 }
 
 .TodoItem {
@@ -64,4 +66,18 @@ input[type="checkbox"] {
 
 .fa-check-circle:hover {
   color: var(--color-accent-secondary);
+}
+
+.btn-primary {
+  border: none;
+  border-radius: 50%;
+  padding: 0.2em 0.6em;
+  font-size: 3rem;
+  font-family: inherit;
+  background: var(--color-accent);
+  color: rgba(0, 0, 0, 0.2);
+  position: absolute;
+  top: 89%;
+  left: 50%;
+  margin-left: -50px;
 }
