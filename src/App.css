@@ -72,12 +72,19 @@ input[type="checkbox"] {
   border: none;
   border-radius: 50%;
   padding: 0.2em 0.6em;
+  cursor: pointer;
   font-size: 3rem;
   font-family: inherit;
-  background: var(--color-accent);
+  background-color: var(--color-accent);
   color: rgba(0, 0, 0, 0.2);
   position: absolute;
   top: 89%;
   left: 50%;
   margin-left: -50px;
+  transition: all 0.25s ease-in-out;
+}
+
+.btn-primary:hover,
+.btn-primary:focus {
+  background-color: var(--color-accent-secondary);
 }
