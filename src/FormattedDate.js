@@ -30,9 +30,13 @@ function FormattedDate({ date }) {
   return (
     <div className='date-container'>
       <div className='date'>
-        {date.date} {month} {date.year}
+        <p className='date-number'>{date.date}</p>
+        <div>
+          <p className='date-month'>{month}</p>
+          <p className='date-year'>{date.year}</p>
+        </div>
       </div>
-      <div className='day'>{day}</div>
+      <div className='date-day'>{day}</div>
     </div>
   );
 }

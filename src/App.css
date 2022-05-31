@@ -2,7 +2,7 @@
 
 :root {
   --color-primary: #585c6b;
-  --color-secondary: #eaeaea;
+  --color-secondary: #d3d1d1;
   --color-accent: #51e3a4;
   --color-accent-secondary: #87f2c4;
 }
@@ -88,4 +88,31 @@ input[type="checkbox"] {
 .date-container {
   display: flex;
   justify-content: space-between;
+  align-items: center;
+  padding-bottom: 3em;
+  max-height: 50px;
+}
+
+.date {
+  display: flex;
+  align-items: center;
+}
+
+.date-number {
+  font-size: 3.2rem;
+  padding-right: 0.1em;
+}
+
+.date-month,
+.date-year {
+  margin: 0;
+}
+
+.date-year {
+  color: var(--color-secondary);
+}
+
+.date-month,
+.date-day {
+  text-transform: uppercase;
 }

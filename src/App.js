@@ -52,10 +52,6 @@ function App() {
   return (
     <main className='main'>
       <FormattedDate date={date} />
-      {/* <div className='date-container'>
-        <div className='date'>Date</div>
-        <div className='day'>Day</div>
-      </div> */}
       <div className='todo-list'>{todoComponents}</div>
       <button className='btn-primary' onClick={handleClick}>
         +
