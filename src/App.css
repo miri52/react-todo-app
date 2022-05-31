@@ -29,8 +29,7 @@ body {
   width: 80%;
   max-width: 500px;
   margin: 0 auto;
-  padding: 1em;
-  padding-bottom: 4em;
+  padding: 3em 2em 4em;
   position: relative;
 }
 
@@ -38,11 +37,6 @@ body {
   display: flex;
   align-items: center;
   justify-content: space-between;
-}
-
-.todo-list {
-  width: 90%;
-  margin: 0 auto;
 }
 
 input[type="checkbox"] {
@@ -87,4 +81,11 @@ input[type="checkbox"] {
 .btn-primary:hover,
 .btn-primary:focus {
   background-color: var(--color-accent-secondary);
+}
+
+/* Date */
+
+.date-container {
+  display: flex;
+  justify-content: space-between;
 }
